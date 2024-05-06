@@ -1,6 +1,12 @@
 
 *{
     box-sizing: border-box;
+   
+}
+
+body{
+    padding:0;
+    margin:0;
 }
 
 h3{
@@ -57,13 +63,17 @@ h4{
     
 }
 
-
+.stickyHdr{
+    position: fixed;
+    background-color: rgb(234, 240, 240);
+}
 
 .header{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-bottom:red 2px solid;
     }
+
 
 .title{
    grid-column-start:2 ;
@@ -93,6 +103,7 @@ h4{
     align-items: center;
     padding:4px;
     border-bottom: solid red 2px;
+    padding-top: 100px;
 }
 
 
@@ -153,6 +164,21 @@ h4{
     background-color:azure;
 }
 
+.cntctCntnr{
+    padding:6px;
+}
 
 
+.cntctLinks{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
 
+.cntctLinks a:hover{
+    background-color: green;
+    cursor:pointer;
+}
