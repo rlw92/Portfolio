@@ -66,6 +66,7 @@ h4{
 .stickyHdr{
     position: fixed;
     background-color: rgb(234, 240, 240);
+    width:100%;
 }
 
 .header{
