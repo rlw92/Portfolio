@@ -3,10 +3,10 @@ let nvBtn = document.getElementById("navBtn");
 let clsBtn = document.getElementById("close")
 
 function toggleNavMenu(){
-    if(nvCnt.style.top === "0vh")
-        {nvCnt.style.top = "-100vh"}
+    if(nvCnt.style.right === "0vw")
+        {nvCnt.style.right = "-100vw"}
     else{
-        nvCnt.style.top = "0vh"
+        nvCnt.style.right = "0vw"
     }
 }
 
