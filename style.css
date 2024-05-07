@@ -21,7 +21,7 @@ h4{
 .navContainer{
     
     position: absolute;
-    top:-100vh;
+    top:0vh;
     width:98%;
     z-index:1;
     background-color: antiquewhite;
@@ -29,16 +29,7 @@ h4{
     transition:2s;
 }
 
-#navContainer.show{
-    position: absolute;
-    top:100vh;
-    width:98%;
-    z-index:1;
-    background-color: antiquewhite;
-    height:100vh;
-    transition:4s;
 
-}
 
 .navmenu{
     display:flex;
@@ -50,6 +41,7 @@ h4{
 }
 
 .navmenu a{
+    
         
 }
 .navmenu .close{
@@ -67,9 +59,12 @@ h4{
     position: fixed;
     background-color: rgb(234, 240, 240);
     width:100%;
+    
+    
 }
 
 .header{
+    position:relative;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-bottom:red 2px solid;
@@ -78,7 +73,7 @@ h4{
 
 .title{
    grid-column-start:2 ;
-  
+  z-index:2;
   text-align: center;     
 }
 
@@ -137,9 +132,7 @@ h4{
     gap:2px;
 }
 
-.imgCntnr img:hover{
-    opacity:0.5;
-}
+
 
 .imgCntnr .frstImg{
     max-width:30vw;
@@ -183,3 +176,20 @@ h4{
     background-color: green;
     cursor:pointer;
 }
+
+@media screen and (min-width: 420px) {
+    .cntctLinks{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        
+    }
+    
+    .cntctLinks a:hover{
+        background-color: green;
+        cursor:pointer;
+    }
+  }

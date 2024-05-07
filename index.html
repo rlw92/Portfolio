@@ -9,16 +9,7 @@
 </head>
 <body>
 
-    <!--Nav Menu-->
-    <div class="navContainer" id="navContainer">
-    <div class="navmenu">
-        <span class="close" id="close">x</span>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Tech Stack</a>
-        <a href="">Contact</a>
-    </div>
-    </div>
+    
 
     <!--Header-->
     <div class="stickyHdr">
@@ -36,15 +27,29 @@
                 menu
                 </span>
         </div>
+
+        <!--Nav Menu-->
+    <div class="navContainer" id="navContainer">
+        <div class="navmenu">
+            <span class="close" id="close">x</span>
+            <a href="#abtSctn">About</a>
+            <a href="#prjctSctn" onClick="toggleNavMenu()">Projects</a>
+            <a href="">Tech Stack</a>
+            <a href="">Contact</a>
+        </div>
+        </div>
+
+
             
     </div>
+    
 </div>
 
 
 
 
     <!--About Section with Github Profile pic-->
-    <div class="abtSctn">
+    <div class="abtSctn" >
 
         <div>
           <img class="headshot" src="Assets/headshot.jpg" alt="Profile image">
@@ -77,9 +82,9 @@
     </div>
 
     <!--Projects-->
-    <div class="prjctCntnr">
+    <div class="prjctCntnr" >
 
-        <div>
+        <div id="prjctSctn">
             <h3>My Projects</h3>
         </div>
 
