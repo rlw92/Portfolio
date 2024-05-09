@@ -52,6 +52,18 @@ h4{
     
 }
 
+.flagCntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.flag{
+    max-width: 40vw;
+}
+
 /*Mobile Devices*/
 
 
@@ -139,6 +151,7 @@ h4{
     cursor:pointer;   
     
 }
+
 
 }
 
@@ -314,6 +327,8 @@ h4{
         border-radius: 100%;
         max-width:20vw;
     }
+
+    
 
     .title{
         margin-left:4vw;
