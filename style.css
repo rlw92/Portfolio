@@ -16,6 +16,8 @@
    
 }
 
+
+
 .horror{
     font: 20px horror;
 }
@@ -39,6 +41,11 @@ h4{
     text-align: center;
     
 }
+
+/*Mobile Devices*/
+
+
+@media screen and (max-width: 419px) {
 
 /*Nav Menu */
 .navContainer{
@@ -96,6 +103,7 @@ h4{
 }
 
 .header{
+    z-index:2;
     position:relative;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -120,6 +128,8 @@ h4{
 .navBtn:hover{
     cursor:pointer;   
     
+}
+
 }
 
 /*About section*/
@@ -162,6 +172,11 @@ h4{
 
 #prjctSctn{
     padding-top: 50px;
+    
+}
+
+.prjctAbt{
+    font-size:2em;
 }
 
 
@@ -220,11 +235,16 @@ h4{
     cursor:pointer;
 }
 
+
+
+/*End Mobile Devices*/
+
 /*Animations*/
 
 .fade-in{
     z-index:-1;
-    animation:fadeIn 2s;
+    animation:fadeIn linear;
+   
 }
 .fade-in8s{
     z-index:-2;
@@ -242,8 +262,47 @@ h4{
 }
 
 
+/*Desktop and tablet*/
 
 @media screen and (min-width: 420px) {
+
+    .stickyHdr{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        position: fixed;
+    background-color: rgb(234, 240, 240);
+    width:100%;
+    height:10vh;
+    border-bottom: red 2px solid;
+    
+    
+    }
+
+    .abtSctn{
+        padding-top: 10vh;
+    }
+
+    .title{
+        margin-left:4vw;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .navBtn{
+        display:none;
+    }
+
+    .navmenu{
+        display: flex;
+        flex-direction: row;
+        gap:6px;
+        margin-right: 4vw;
+    }
+
+   
     .cntctLinks{
         display:flex;
         flex-direction: row;
