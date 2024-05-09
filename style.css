@@ -16,6 +16,16 @@
    
 }
 
+span{
+    text-align: center;
+}
+
+.techTags span:hover{
+    transition:2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 
 .horror{
@@ -144,6 +154,13 @@ h4{
     padding-top: 100px;
     padding-bottom: 50px;
     font-size:1.5em;
+}
+
+.abtContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -275,12 +292,27 @@ h4{
     width:100%;
     height:10vh;
     border-bottom: red 2px solid;
+    z-index:2;
     
     
     }
 
     .abtSctn{
         padding-top: 10vh;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .abtContent{
+        display: block;
+    }
+
+
+    .headshot{
+        float: left;
+        border-radius: 100%;
+        max-width:20vw;
     }
 
     .title{
@@ -300,6 +332,12 @@ h4{
         flex-direction: row;
         gap:6px;
         margin-right: 4vw;
+    }
+
+    .techTags{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
     }
 
    
