@@ -55,6 +55,9 @@ window.onclick = function(event) {
 //add the open modal functionality to each project image
 let img = document.querySelectorAll('img');
 for (i=0; i<img.length;i++ ){
+  img.onload = function(){
+    img.classList.add("fade-in")
+  }
   img[i].addEventListener('click', opnMdl)
 }
 
