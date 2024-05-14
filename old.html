@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <link href="./output.css" rel="stylesheet">
+    <title>Showcase</title>
+</head>
+<body>
+
+    <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id="modal-content">
+    <span class="closeMdl">&times;</span>
+    
+  </div>
+
+</div>
+
+<!-- Find Somewhere to put welsh Flag
+   <div class="flagCntr">
+                    <img class="flag" src="Assets/images/Flag.gif">
+                    <p>Cymru Am Byth!</p>
+                    </div>-->
+
+
+    <!--Header-->
+    <div class="stickyHdr">
+    <div class="header">
+        
+
+                <div class="title">
+                  
+          <h2>          
+        R.L.Williams
+        </h2>
+        </div>
+
+        <div class="navBtn" id="navBtn">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </div>
+            
+    </div>
+        <!--Nav Menu Mobile-->
+    <div class="navContainer" id="navContainer">
+        <div class="navmenu">
+            <span class="close" id="close">x</span>
+            <a href="#abtSctn" onClick="toggleNavMenu()">About</a>
+            <a href="#prjctSctn" onClick="toggleNavMenu()">Projects</a>
+            <a href="#techsctn" onClick="toggleNavMenu()">Toolbox</a>
+            <a href="#cntct" onClick="toggleNavMenu()">Contact</a>
+        </div>
+        </div>
+
+        
+</div>
+
+
+
+
+    <!--About Section with Github Profile pic-->
+    <div class="abtSctn" id="abtSctn">
+       
+          <h3 class="fade-in8s">About Me</h3>
+
+          <div class="abtContent">
+           <div>
+            <img class="headshot" src="Assets/images/headshot.jpg" alt="Profile image">
+          </div>
+          
+          <div class="fade-in16s">
+            <p>
+        I am an aspiring web developer with a passion for learning
+        new technologies, eager to meet like-minded people and am currently looking for 
+         opportunites to develop my skills, hone my craft and grow in a professional role.
+        <br><br></p>
+        
+        
+
+        <p>
+      A lifelong reader of horror and science fiction, gamer, fitness enthusiast and MMA fan.
+        I have always had a creative mind, a penchant for problem solving and a love for puzzles, 
+        so when I stumbled across coding a few years back I felt
+         like I had finally found a profession that suited those aspects of my personality
+         and that I would one day love to be
+         a part of.
+
+         
+        <br><br>
+        
+    
+          </p>
+        
+          
+        </div>
+        </div>
+                   
+        
+        
+                
+
+
+    </div>
+
+    <!--Projects-->
+    <div class="prjctCntnr">
+
+        <div id="prjctSctn">
+            <h3>My Projects</h3>
+        </div>
+
+
+        <!--Project cards-->
+
+        <div class="prjctCard" data-aos="fade-up">
+            
+            
+            <h4 class="horror">Two Sentence Horror Gallery</h4>
+            
+            <div class="imgCntnr">
+            <img class="frstImg" src="Assets/images/laravel.jpg">
+            <img class="scndImg" src="Assets/images/laraveldsktop.PNG">
+        </div>     
+        
+        <div class="prjctAbt">
+            <p> 
+                Users can log in and post their own two sentence horror stories.
+                <br>
+                They can also rate and comment on other users posts.
+                <br>
+                Anyone who visits the site can filter through latest, oldest and highest rated posts. 
+                <br>
+                The authentication was built using Laravel Breezes built in authentication package.
+                <br>
+                This is my first backend project using a framework. Laravel was easy to use and well documented.
+
+            </p>            
+
+        </div>
+         Built with:
+        <div class="techTags">
+            
+            
+         <span>Laravel</span>
+         <span>PHP</span>
+            <span>Breeze</span>
+            <span>TailwindCSS</span>
+            <span>MySQL</span>
+            <span>Render</span>           
+             </div>
+            
+           <a href="https://github.com/rlw92/haunted-inventory-laravel/tree/Speedscare" target="_blank">
+                Github Repo
+            </a>
+            <a href="https://haunted-inventory-laravel.onrender.com/" target="_blank"> 
+              Live Link
+            </a>
+        </div>
+
+
+
+        <div class="prjctCard" data-aos="fade-up">
+            
+            
+            <h4 class="pokemon">PokeStore Direct</h4>
+            
+            <div class="imgCntnr">
+            <img class="frstImg" src="Assets/images/pkmbl.jpg">
+            <img class="scndImg" src="Assets/images/pkdsk.PNG">
+        </div>     
+        
+        <div class="prjctAbt">
+            <p> 
+                Users can search for any pokemon product by filtering or searching and add it to their basket
+                <br>
+                The basket calculates their total amount and shows their order, if they follow it through they are greeted to a little easter egg.
+                <br>
+                This was my first time working with an API 
+                and found it challenging yet rewarding. 
+            </p>            
+
+        </div>
+         Built with:
+        <div class="techTags">
+            
+            
+         <span>ReactJS</span>
+         <span>PokeAPI</span>
+                  
+             </div>
+            
+           <a href='https://github.com/rlw92/PokeStore-Direct' target="_blank">
+                Github Repo
+            </a>
+            
+            <a href="https://rlw92.github.io/PokeStore-Direct/" target="_blank"> 
+              Live Link
+            </a>
+        </div>
+
+        <div class="prjctCard" data-aos="fade-up">
+            
+            
+            <h4>Questlog</h4>
+            
+            <div class="imgCntnr">
+            <img class="frstImg"  src="Assets/images/questlogmbl.jpg">
+          <!--  <img class="scndImg" src="Assets/images/pkdsk.PNG">-->
+        </div>     
+        
+        <div class="prjctAbt">
+            <p> 
+                A simple to do application using Webpack and local storage.
+                <br>
+                Fully intended to be as simplistic as can be and for mobile use only.
+                <br>
+                Is an application I use daily. 
+            </p>            
+
+        </div>
+         Built with:
+        <div class="techTags">
+            
+            
+         <span>Webpack</span>
+         <span>Local Storage</span>
+                  
+             </div>
+            
+           <a href='https://github.com/rlw92/todolist' target="_blank">
+                Github Repo
+            </a>
+            
+            <a href="https://rlw92.github.io/todolist/" target="_blank"> 
+              Live Link
+            </a>
+        </div>
+
+
+    </div>
+
+    <!--Moving banner with tech stack    Need to find example-->
+
+    <div id="techsctn">
+        <h3>My Toolbox</h3>
+        <p>Tech Stack:</p>
+        <div class="techTags">
+              <span data-aos="zoom-in">HTML</span>
+              <span data-aos="zoom-in">CSS</span>
+              <span data-aos="zoom-in">Javascript</span>
+              <span data-aos="zoom-in">PHP</span>
+              <span data-aos="zoom-in">Laravel</span>
+              <span data-aos="zoom-in">TailwindCSS</span>
+              <span data-aos="zoom-in">ReactJS</span>
+              <span data-aos="zoom-in">Github</span>
+              <span data-aos="zoom-in">Laragon</span>
+              <span data-aos="zoom-in">WSL</span>
+              <span data-aos="zoom-in">VSCode</span>
+              <span data-aos="zoom-in">Webpack</span>
+         
+        </div>
+        <p>Soft Skills:</p>
+        <div class="techTags">
+              <span data-aos="zoom-in">Problem Solver</span>
+              <span data-aos="zoom-in">Approachable</span>
+              <span data-aos="zoom-in">Good Communicator</span>
+              <span data-aos="zoom-in">Punctual</span>
+              <span data-aos="zoom-in">Detail Oriented</span>
+              <span data-aos="zoom-in">Curious</span>
+              
+         
+        </div>
+    </div>
+
+    <!--Contact info, github account, email, -->
+    <div class="cntctCntnr" id="cntct">
+        <h3>Get In Touch</h3>
+        <div class="cntctLinks">
+       <i class="fa-solid fa-envelope"></i>
+       williamsr922@gmail.com
+       <i class="fa-brands fa-github"></i>
+       <a href="https://github.com/rlw92?tab=repositories">My Github </a>
+       <i class="fa-brands fa-wordpress"></i>
+       <a href="https://rhyviews.wordpress.com/">My Wordpress Blog</a>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+</body>
+<script src='script.js'></script>
+<script src="https://kit.fontawesome.com/0728cc3f9c.js" crossorigin="anonymous"></script>
+</html>
