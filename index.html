@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />    
     <title>Showcase</title>
 </head>
 <body>
@@ -75,6 +76,7 @@
         </a>  
     </div>
 </div>
+</div>
 
 
 
@@ -85,11 +87,17 @@
 
 <h2 class="flex justify-center text-4xl font-bold p-4">My Projects</h2>
 
-<div class="flex justify-between">
+<div class="lg:flex lg:flex-row lg:justify-between lg:items-stretch
+ flex flex-col items-center gap-4">
 
 <div class="card w-96 bg-base-100 shadow-xl">
   <figure><img src="Assets/images/laraveldsktop.PNG" alt="Shoes" /></figure>
   <div class="card-body">
+    <div class="flex flex-row gap-2">
+    <div class="badge badge-secondary">PHP</div>
+    <div class="badge badge-secondary">Laravel</div>
+    <div class="badge badge-secondary">TailwindCSS</div>   
+    </div> 
     <h2 class="card-title">Two Sentence Horror Gallery</h2>
     <p>
 
@@ -106,6 +114,12 @@
 
     </p>
     <div class="card-actions justify-end">
+
+      <button class="btn btn-primary">
+        <a href="https://github.com/rlw92/haunted-inventory-laravel/tree/Speedscare" target="_blank">
+          Github Repo
+      </a></button>
+
       <button class="btn btn-primary">
         <a href="https://haunted-inventory-laravel.onrender.com/" target="_blank"> 
         Live Demo
@@ -119,6 +133,11 @@
 <div class="card w-96 bg-base-100 shadow-xl">
   <figure><img src="Assets/images/pkdsk.PNG" alt="Shoes" /></figure>
   <div class="card-body">
+
+    <div class="flex flex-row gap-2">
+      <div class="badge badge-secondary">PokeStoreAPI</div>
+      <div class="badge badge-secondary">ReactJS</div>
+       </div> 
     <h2 class="card-title">PokeStore Direct</h2>
     <p>
       Users can search for any pokemon product by filtering or searching and add it to their basket
@@ -129,6 +148,12 @@
                 and found it challenging yet rewarding. 
     </p>
     <div class="card-actions justify-end">
+      <button class="btn btn-primary">
+      <a href='https://github.com/rlw92/PokeStore-Direct' target="_blank">
+        Github Repo
+    </a>
+    </button>
+
       <button class="btn btn-primary">
         <a href="https://rlw92.github.io/PokeStore-Direct/" target="_blank">
         Live Demo
@@ -144,6 +169,10 @@
      />
     </figure>
   <div class="card-body">
+    <div class="flex flex-row gap-2">
+      <div class="badge badge-secondary">Webpack</div>
+      <div class="badge badge-secondary">Local Storage</div>
+       </div> 
     <h2 class="card-title">Questlog</h2>
     <p>
       A simple to do application using Webpack and local storage.
@@ -153,7 +182,14 @@
       Is an application I use daily. 
     </p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">
+      
+
+        <button class="btn btn-primary">
+          <a href='https://github.com/rlw92/todolist' target="_blank">
+            Github Repo
+        </a>
+        </button>
+<button class="btn btn-primary">
         <a href="https://rlw92.github.io/todolist/" target="_blank"> 
           Live Demo
         </a></button>

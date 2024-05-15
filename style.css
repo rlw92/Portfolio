@@ -454,6 +454,7 @@ h4{
     background: linear-gradient(-45deg, #b2da23, #e73c7e, #0d9c3d, #d81747);
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
+    
 }
 
 @keyframes gradient {
