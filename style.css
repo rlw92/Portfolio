@@ -379,7 +379,6 @@ h4{
 
 
     .headshot{
-        float: left;
         border-radius: 100%;
         max-width:20vw;
     }
